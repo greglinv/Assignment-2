@@ -8,9 +8,11 @@ using namespace std;
 int main()
 {
     Professional prof("John Doe", 1234, 5000, 20);
-    Nonprofessional nonprof("Jane Smith", 5678, 15, 80);
-
-    // Set hours worked for nonprofessional employee
+    Nonprofessional nonprof;
+    nonprof.setName("Jane Smith");
+    nonprof.setID(2345);
+    nonprof.setHourlyRate(15);
+    nonprof.setVacationHours(80);
     nonprof.setHoursWorked(40);
 
     // Calculate weekly salary, health care contributions, and vacation days for each employee
